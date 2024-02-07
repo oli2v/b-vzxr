@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 
 def main():
     # Read width and height
-    uni = open("universe.txt", "r").readlines()
+    uni = open("instructions/universe.txt", "r").readlines()
     width = int(uni[0].split(":")[1])
     height = int(uni[1].split(":")[1])
 
     # Read instructions
-    instructions = open("instruction_list.txt", "r").readlines()
+    instructions = open("instructions/instruction_list.txt", "r").readlines()
 
     # Initialize postion and orientation
     x, y = 0, 0
